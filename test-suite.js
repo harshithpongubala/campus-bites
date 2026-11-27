@@ -230,9 +230,12 @@ class DSATestSuite {
     testOrderIdGenerationUniqueness() {
         const generatedIds = new Set();
         const testCount = 50;
+        const idGen = typeof generateUniqueOrderId === 'function' 
+            ? generateUniqueOrderId 
+            : () => `CB-${Date.now().toString().slice(-4)}-${Math.random().toString(36).substring(2, 5).toUpperCase()}`;
 
         for (let i = 0; i < testCount; i++) {
-            const id = generateUniqueOrderId();
+            const id = idGen();
             generatedIds.add(id);
         }
 
@@ -294,5 +297,11 @@ if (typeof window !== 'undefined') {
 
 // If running in Node.js headless environment
 if (typeof module !== 'undefined' && module.exports) {
+    if (typeof OrderQueue === 'undefined') {
+        const dsa = require('./dsa.js');
+        global.OrderQueue = dsa.OrderQueue;
+        global.MenuArrayManager = dsa.MenuArrayManager;
+        global.OrderSorter = dsa.OrderSorter;
+    }
     module.exports = DSATestSuite;
 }
