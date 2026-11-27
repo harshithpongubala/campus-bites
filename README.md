@@ -3,10 +3,12 @@
 > **Skip the Line. Savor the Break.**  
 > *University Canteen Pre-Ordering, Slot Scheduling & Queue Management System*
 
-[![Technology](https://img.shields.io/badge/Frontend-HTML5%20%7C%20CSS3%20%7C%20Vanilla%20JS-F97316?style=for-the-badge)](https://github.com/harshithpongubala/campus-bites)
-[![Data Structures](https://img.shields.io/badge/DSA-Arrays%20%7C%20FIFO%20Queue%20%7C%20Sorting-3B82F6?style=for-the-badge)](https://github.com/harshithpongubala/campus-bites)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-campus--bites--delta.vercel.app-F97316?style=for-the-badge&logo=vercel&logoColor=white)](https://campus-bites-delta.vercel.app/)
+[![Technology](https://img.shields.io/badge/Frontend-HTML5%20%7C%20CSS3%20%7C%20Vanilla%20JS-blue?style=for-the-badge)](https://campus-bites-delta.vercel.app/)
+[![Data Structures](https://img.shields.io/badge/DSA-Arrays%20%7C%20FIFO%20Queue%20%7C%20Sorting-3B82F6?style=for-the-badge)](https://campus-bites-delta.vercel.app/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/harshithpongubala/campus-bites)
-[![License](https://img.shields.io/badge/License-MIT-10B981?style=for-the-badge)](https://github.com/harshithpongubala/campus-bites)
+
+🔗 **Live Application Demo:** [https://campus-bites-delta.vercel.app/](https://campus-bites-delta.vercel.app/)
 
 ---
 
@@ -133,6 +135,13 @@ campus-bites/
 - Python 3.8+ (for running the local development server) **OR** any standard web server
 - Any modern web browser (Chrome, Edge, Firefox, Safari)
 - *(Optional)* Node.js (for headless execution of the test suite)
+
+---
+
+### 🌐 Live Online Demo (No Installation Required)
+
+Experience the live application hosted directly on Vercel:  
+👉 **[https://campus-bites-delta.vercel.app/](https://campus-bites-delta.vercel.app/)**
 
 ---
 
