@@ -191,31 +191,6 @@ The **Simulation Lab** is an interactive educational dashboard accessible from b
   - The Simulation Lab runs on isolated simulation data instances, ensuring demo actions never alter or delete actual student orders in `localStorage`.
 
 ---
-
-## 8. 2–3 Minute Professor Presentation Guide
-
-Follow this concise, high-impact script when presenting Campus Bites to your professor or examiner:
-
-1. **The Real-World Problem (30 seconds)**:
-   > *"Professor, campus canteens suffer from heavy rush-hour congestion during lunch breaks. Students waste 20 to 30 minutes standing in line just to order and collect food. Campus Bites solves this with a university SaaS platform where students pre-order and reserve lunch pickup slots."*
-
-2. **The Core DSA Implementations (60 seconds)**:
-   > *"Rather than relying on generic libraries, we implemented three core DSA concepts from scratch in vanilla JavaScript:*
-   > * *1. **Dynamic Arrays:** Used in `MenuArrayManager` to store catalog items with $O(n)$ linear search and $O(1)$ amortized push.*
-   > * *2. **FIFO Queue:** Implemented in `OrderQueue` using numeric `_head` and `_tail` index pointers. This gives us true $O(1)$ constant time for both enqueue and dequeue, avoiding the $O(n)$ re-indexing penalty of JavaScript's native `Array.shift()`.*
-   > * *3. **Chronological Sorting:** Implemented in `OrderSorter` using both adaptive Insertion Sort and Merge Sort to arrange pre-orders by student pickup timestamps."*
-
-3. **Live Demonstration in the Simulation Lab (60 seconds)**:
-   > *"Let's open the **Simulation Lab**:*
-   > * *In **Module B (FIFO Queue)**: Notice the `_head` and `_tail` pointer indicators. When I click **Enqueue**, an order is added to the rear. When I click **Peek**, the front order is inspected in $O(1)$ without removal. When I click **Dequeue**, the head pointer advances and the order moves to the chef's stove.*
-   > * *In **Module C (Sorting)**: Here are orders with mixed pickup times (1:30 PM, 12:00 PM, 12:15 PM). Stepping through Insertion Sort shows how earlier orders shift forward.*
-   > * *In **Module D (Lunch Rush)**: Clicking **Start Simulation** runs an 8-stage campus scenario with 5 students. Notice that orders for 1:00 PM do NOT block orders due at 12:15 PM—orders only enter the active FIFO queue when their prep window arrives."*
-
-4. **Automated Verification Harness (30 seconds)**:
-   > *"Finally, we built a comprehensive unit test suite covering 35 functional assertions across queue underflow safety, array operations, and sorting correctness. Clicking **'Run DSA Tests'** demonstrates 35/35 tests passing with a 100% score."*
-
----
-
 ## 9. Project File Structure
 
 ```
